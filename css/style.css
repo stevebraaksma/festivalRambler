@@ -1,0 +1,33 @@
+table, th, td {
+    border: 1px solid white;
+    border-collapse: collapse;
+    border-radius: 5px;
+}
+th, td {
+    background-color: #96D4D4;
+    padding: 4px;
+}
+
+
+table {
+    width: 100%;
+}
+
+
+#festivalname {
+    width: 40%;
+}
+
+#festivallocation {
+    width: 30%;
+}
+
+#festivaldate {
+    width: 20%;
+}
+
+#festivaldrivetime {
+    width: 10%;
+}
+
+
