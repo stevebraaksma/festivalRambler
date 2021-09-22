@@ -20,6 +20,7 @@ const allUSArray = ['Iowa', 'Illinois', 'Indiana', 'Kansas', 'Michigan', 'Minnes
 'Arizona', 'California', 'Colorado', 'Hawaii', 'Idaho', 'Montana', 'New Mexico', 'Nevada', 'Oregon', 
 'Utah', 'Washington', 'Wyoming'];
 
+const $year = $('#year');
 const $form = $('form');
 const $inputRegion = $("#region");
 
@@ -92,5 +93,10 @@ function handleGetData(event) {
      $('#reset').click(function () {
         $("table").find("tr:gt(0)").remove();
     });
+
+    init();
+    function init() {
+        $year.text(new Date().getFullYear());
+    }
      
 });
