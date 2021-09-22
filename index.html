@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script defer src="./js/script.js"></script>
-    <link rel="stylesheet" href=./css/style.css>    
+    <link rel="stylesheet" href=./css/style.css>   
+    <script src="https://kit.fontawesome.com/24d8bd82dd.js" crossorigin="anonymous"></script> 
     
 
     <title>festivalRambler</title>
@@ -17,7 +18,7 @@
     <h1>festivalRambler</h1>
     <p>Upcoming EDM festivals by region.</p>
 
-    <form>
+    <form id="fest-form">
         <!-- <label for="drive-start">Driving from:</label>
         <br>
         <input type="text" id="drive-start" name="drive-start" placeholder="e.g., Chicago, IL"> -->
@@ -58,8 +59,16 @@
         <br><br>
         <input type="submit" value="Get Festivals">
 
+        <!-- <input type="reset">
+        <input type="button" onclick="this.form.reset();"> -->
+
+
+        <input type="button" onclick="myFunction()" value="Reset form">
+
 
       </form> 
+
+      <br>
 
 
       <table>
@@ -68,17 +77,12 @@
                 <th id="fest-name">Festival Name</th>
                 <th id="fest-loc">Location</th>
                 <th id="fest-date">Date</th>
+                <th id="event-link">Link</th>                
                 <!-- <th id="fest-time">Drive</th> -->
                 <!-- if there is time, could go back and make this column a link -->
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <td>EDC Las Vegas</td>
-                <td>las vegas nv</td>
-                <td>date</td>
-                <!-- <td>8 hrs</td> -->
-            </tr>
         </tbody>
       </table>
 

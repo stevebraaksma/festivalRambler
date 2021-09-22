@@ -1,4 +1,10 @@
 // IIFE
+
+
+function myFunction() {
+    document.getElementById("fest-form").reset();
+  }
+
 $(function(){
 
 
@@ -29,6 +35,8 @@ const $inputEndDate = $('input[id="end-date"]');
  
     
 $form.on('submit', handleGetData);
+
+
 
     
 function handleGetData(event) {
@@ -98,6 +106,14 @@ function handleGetData(event) {
                     <td>${thisIsTheOne[1]['name']}</td>
                     <td>${thisIsTheOne[1]['venue']['location']}</td>
                     <td>${thisIsTheOne[1]['date']}</td>
+
+                    <i class="btn btn-light fa fa-dribbble fa-4x" href="${thisIsTheOne[1]['link']}"></i>
+
+
+                    <td>  <a href=${thisIsTheOne[1]['link']} target="_blank"> <i class="fas fa-external-link-alt"></i></a></td>
+
+                    
+
                     </tr>`)
                     $('tbody').append(currentFestBeingAddedNow);
                 }
