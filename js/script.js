@@ -1,10 +1,5 @@
 // IIFE
 
-
-function myFunction() {
-    document.getElementById("fest-form").reset();
-  }
-
 $(function(){
 
 
@@ -175,6 +170,17 @@ function handleGetData(event) {
         })
     }
 
+    // $('#reset').on('click', 'button', function() {
+    //     console.log(this)
+    //     $(this).closest('tr').fadeOut(1100, function() {
+    //         $(this.remove())
+    //     })
+    //  })
 
+
+     $('#reset').click(function () {
+        $("table").find("tr:gt(0)").remove();
+    });
+     
 
 });
