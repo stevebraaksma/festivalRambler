@@ -15,23 +15,24 @@
 
 
     <h1>festivalRambler</h1>
-    <p>Upcoming EDM festivals sorted by driving distance.</p>
+    <p>Upcoming EDM festivals by region.</p>
 
     <form>
-        <label for="drive-start">Driving from:</label>
+        <!-- <label for="drive-start">Driving from:</label>
         <br>
-        <input type="text" id="drive-start" name="drive-start" placeholder="e.g., Chicago, IL">
-        <br><br>
-        <label for="max-drive">Maximum driving time:</label>
+        <input type="text" id="drive-start" name="drive-start" placeholder="e.g., Chicago, IL"> -->
+       
+        <label for="region">Select region, or all US</label>
         <br>
 
-        <select  id="max-drive">
-            <option value="1">1 hour</option>
-            <option value="2">2 hours</option>
-            <option value="3">3 hours</option>
-            <option value="4">4 hours</option>
-            <option value="5">5 hours</option>
-            <option value="6">6 hours</option>
+        <select  id="region">
+            <option value="West">West</option>
+            <option value="Northeast">Northeast</option>
+            <option value="South">South</option>
+            <option value="Midwest">Midwest</option>
+            <option value="all US">all US</option>
+
+            <!-- <option value="6">6 hours</option>
             <option value="7">7 hours</option>
             <option value="8">8 hours</option>
             <option value="9">9 hours</option>
@@ -39,19 +40,21 @@
             <option value="12">12 hours</option>
             <option value="14">14 hours</option>
             <option value="16">16 hours</option>
-            <option value="1000">don't care/I'm flying</option>
+            <option value="1000">don't care/I'm flying</option> -->
+
           </select>
 
         <br><br>
         
-        <label for="start-date">From:</label>
+        <!-- <label for="start-date">From:</label>
         <br>
         <input type="month" id="start-date" name="start-date">
         <br><br>
 
         <label for="end-date">To:</label>
         <br>
-        <input type="month" id="end-date" name="end-date">
+        <input type="month" id="end-date" name="end-date"> -->
+
         <br><br>
         <input type="submit" value="Get Festivals">
 
@@ -65,7 +68,8 @@
                 <th id="fest-name">Festival Name</th>
                 <th id="fest-loc">Location</th>
                 <th id="fest-date">Date</th>
-                <th id="fest-time">Drive</th>
+                <!-- <th id="fest-time">Drive</th> -->
+                <!-- if there is time, could go back and make this column a link -->
             </tr>
         </thead>
         <tbody>
@@ -73,10 +77,13 @@
                 <td>EDC Las Vegas</td>
                 <td>las vegas nv</td>
                 <td>date</td>
-                <td>8 hrs</td>
+                <!-- <td>8 hrs</td> -->
             </tr>
         </tbody>
       </table>
+
+
+
 
     
 </body>
