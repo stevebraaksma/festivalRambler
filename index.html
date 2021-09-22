@@ -12,20 +12,19 @@
 
     <title>festivalRambler</title>
 </head>
+
+
 <body>
+    <header>
+        <h1>festivalRambler</h1>
+    </header>
 
-
-    <h1>festivalRambler</h1>
-    <p>Upcoming EDM festivals by region.</p>
+    <main>
+    <h3>Upcoming EDM festivals by region.</h3>
 
     <form id="fest-form">
-        <!-- <label for="drive-start">Driving from:</label>
+        <label for="region">Select region:</label>
         <br>
-        <input type="text" id="drive-start" name="drive-start" placeholder="e.g., Chicago, IL"> -->
-       
-        <label for="region">Select region, or all US</label>
-        <br>
-
         <select  id="region">
             <option value="West">West</option>
             <option value="Northeast">Northeast</option>
@@ -33,62 +32,32 @@
             <option value="Midwest">Midwest</option>
             <option value="all US">all US</option>
             <option value="other">other (Mexico, Canada, etc)</option>
-
-            <!-- <option value="6">6 hours</option>
-            <option value="7">7 hours</option>
-            <option value="8">8 hours</option>
-            <option value="9">9 hours</option>
-            <option value="10">10 hours</option>
-            <option value="12">12 hours</option>
-            <option value="14">14 hours</option>
-            <option value="16">16 hours</option>
-            <option value="1000">don't care/I'm flying</option> -->
-
           </select>
-
-        <br><br>
-        
-        <!-- <label for="start-date">From:</label>
         <br>
-        <input type="month" id="start-date" name="start-date">
-        <br><br>
-
-        <label for="end-date">To:</label>
         <br>
-        <input type="month" id="end-date" name="end-date"> -->
+        <input type="submit" id="submit" value="Get Festivals">
+        <input type="button" id="reset" value="Reset">
+    </form> 
 
-        <br><br>
-        <input type="submit" value="Get Festivals">
+    <br>
 
-        <!-- <input type="reset">
-        <input type="button" onclick="this.form.reset();"> -->
-
-
-        <input type="button" id="reset" value="Reset form">
-
-
-      </form> 
-
-      <br>
-
-
-      <table>
-        <thead>
+    <table>
+        <thead id="table-head">
             <tr>
                 <th id="fest-name">Festival Name</th>
                 <th id="fest-loc">Location</th>
                 <th id="fest-date">Date</th>
                 <th id="event-link">Link</th>                
-                <!-- <th id="fest-time">Drive</th> -->
-                <!-- if there is time, could go back and make this column a link -->
             </tr>
         </thead>
         <tbody>
         </tbody>
-      </table>
+    </table>
 
-
-
+    </main>
+    <footer>
+        <p>Copyright &copy; <span id="year"></span>All Rights Reserved</p>
+    </footer>
 
     
 </body>
