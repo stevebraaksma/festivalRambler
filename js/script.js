@@ -28,9 +28,21 @@ let festivalData;
 
 $form.on('submit', handleGetData);
 
+
+function resetForm() {
+    $("table").find("tr:gt(0)").remove();
+};
+
+
 function handleGetData(event) {
-    event.preventDefault();    
+    event.preventDefault();  
+
+    // removes currently displayed data if applicable.
+    resetForm(); 
+    
     const region = $inputRegion.val();
+
+
 
     $.ajax(`${EDM_TRAIN_BASE_URL}/api/events?festivalInd=true&client=${EDM_TRAIN_API_KEY}`).then(function(data) {
         festivalData = data;
@@ -90,9 +102,6 @@ function handleGetData(event) {
         })
     }
 
-     $('#reset').click(function () {
-        $("table").find("tr:gt(0)").remove();
-    });
 
     init();
     function init() {
