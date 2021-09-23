@@ -21,28 +21,33 @@ const allUSArray = ['Iowa', 'Illinois', 'Indiana', 'Kansas', 'Michigan', 'Minnes
 'Utah', 'Washington', 'Wyoming'];
 
 const $year = $('#year');
-const $form = $('form');
-const $inputRegion = $("#region");
+const $btnSelect = $('.btn-select');
 
 let festivalData;
+let currentRegionSelection;
 
-$form.on('submit', handleGetData);
 
+// shade the currently selected button, unshade others, get current state
+$btnSelect.on('click', function() {
+    $btnSelect.removeClass('btn-current-select');
+    $(this).addClass('btn-current-select');
+    currentRegionSelection = ($(this).attr("value"));
+  });
 
+// start main ajax function
+$btnSelect.on('click', handleGetData);
+
+//reset data
 function resetForm() {
     $("table").find("tr:gt(0)").remove();
 };
 
-
 function handleGetData(event) {
     event.preventDefault();  
-
     // removes currently displayed data if applicable.
     resetForm(); 
-    
-    const region = $inputRegion.val();
 
-
+    const region = currentRegionSelection;
 
     $.ajax(`${EDM_TRAIN_BASE_URL}/api/events?festivalInd=true&client=${EDM_TRAIN_API_KEY}`).then(function(data) {
         festivalData = data;
@@ -101,7 +106,6 @@ function handleGetData(event) {
         console.log(error);
         })
     }
-
 
     init();
     function init() {

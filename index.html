@@ -22,22 +22,18 @@
     <main>
     <h3>Upcoming EDM festivals by region.</h3>
 
-    <form id="fest-form">
-        <label for="region">Select region:</label>
-        <br>
-        <select  id="region">
-            <option value="West">West</option>
-            <option value="Northeast">Northeast</option>
-            <option value="South">South</option>
-            <option value="Midwest">Midwest</option>
-            <option value="all US">all US</option>
-            <option value="other">other (Mexico, Canada, etc)</option>
-          </select>
-        <br>
-        <br>
-        <input type="submit" id="submit" value="Get Festivals">
-        <!-- <input type="button" id="reset" value="Reset"> -->
-    </form> 
+
+    
+
+    <div id="region-buttons">
+        <button type="button" class="btn-select" id="west" value="West">West</button>
+        <button type="button" class="btn-select" id="northeast" value="Northeast">Northeast</button>
+        <button type="button" class="btn-select" id="south" value="South">South</button>
+        <button type="button" class="btn-select" id="midwest" value="Midwest">Midwest</button>
+        <button type="button" class="btn-select" id="all US" value="all US">all US</button>
+        <button type="button" class="btn-select" id="other" value="other">Mexico, Canada, etc)</button>
+    </div>
+    
 
     <br>
 
@@ -56,7 +52,7 @@
 
     </main>
     <footer>
-        <p>Copyright &copy; <span id="year"></span>All Rights Reserved</p>
+        <p>Copyright &copy; <span id="year"></span> All Rights Reserved</p>
     </footer>
 
     

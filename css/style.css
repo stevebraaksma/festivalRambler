@@ -37,6 +37,31 @@ h3 {
     padding: 1rem;
 }
 
+
+/* 
+#feedback { font-size: 1.4em; }
+#selectable .ui-selecting { background: #FECA40; }
+#selectable .ui-selected { background: #F39814; color: white; }
+#selectable { list-style-type: none; margin: 0; padding: 0; width: 550px; }
+#selectable li { margin: 3px; padding: 1px; float: left; width: 100px; height: 80px; font-size: 4em; text-align: center; } */
+
+.box {
+    background: white;
+    color: red;
+    text-align: center;
+    box-sizing: border-box;
+    width: 100px;
+    height: 100px;
+    display: block;
+    float: left;
+    margin: 1%;
+  }
+
+.btn-current-select {
+    background-color: orange;
+}
+
+
 #submit, #reset {
     background-color: greenyellow;
 }
