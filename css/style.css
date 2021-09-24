@@ -5,22 +5,27 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    max-width: 800px;
-    align-items: center;
+    /* display: flex;
+    flex-direction: column; */
+
+    /* min-height: 100vh;
+    max-width: 800px; */
+    /* align-items: center;
+    justify-content: center; */
+    background-image: url("./techno.jpg");
+    background-image: url("./fest.jpg");
 }
 
 header, footer {
-    display: flex;
+    /* display: flex;
     align-items: center;
-    height: 3.125rem;
+    justify-content: center;
+    height: 3.125rem; */
 }
 
-form {
+/* form {
     padding: 1rem;
-}
+} */
 
 h1 {
 
@@ -38,36 +43,40 @@ h3 {
 }
 
 
-/* 
-#feedback { font-size: 1.4em; }
-#selectable .ui-selecting { background: #FECA40; }
-#selectable .ui-selected { background: #F39814; color: white; }
-#selectable { list-style-type: none; margin: 0; padding: 0; width: 550px; }
-#selectable li { margin: 3px; padding: 1px; float: left; width: 100px; height: 80px; font-size: 4em; text-align: center; } */
 
-.box {
-    background: white;
-    color: red;
-    text-align: center;
-    box-sizing: border-box;
-    width: 100px;
-    height: 100px;
-    display: block;
-    float: left;
-    margin: 1%;
-  }
-
-.btn-current-select {
-    background-color: orange;
+.btn-select {
+    background-color: #FFFF01;
+    width: 160px;
+    padding: 10px;
+    margin: 4px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    border-radius: 8px;
 }
 
 
-#submit, #reset {
+.btn-current-select {
+    background-color: #00FF00;
+}
+
+
+/* #submit, #reset {
     background-color: greenyellow;
 }
 
 #reset {
     background-color: orange;
+} */
+
+table {
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+    /* flex-grow: 1; */
+    margin-left: auto;
+    margin-right: auto;
+    width: 390px;
 }
 
 table, th, td {
@@ -81,12 +90,7 @@ th, td {
 }
 
 
-table {
-    width: 100%;
-}
-
 th {
-  
     background-color: purple;
     color: yellow;
 }
@@ -105,6 +109,21 @@ th {
 
 #fest-link {
     width: 10%;
+}
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 1000px) {
+    table {
+       width: 500px; 
+        
+    }
+  }
+  
+@media only screen and (min-width: 1024px) {
+    table {
+        width: 600px;
+    }
 }
 
 
