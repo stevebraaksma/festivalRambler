@@ -95,7 +95,7 @@ function handleGetData(event) {
                 <td>${currentFest[1]['name']}</td>
                 <td>${currentFest[1]['venue']['location']}</td>
                 <td>${currentFest[1]['date']}</td>
-                <td>  <a href=${currentFest[1]['link']} target="_blank"> <i class="fas fa-external-link-alt"></i></a></td>
+                <td> &nbsp<a href=${currentFest[1]['link']} target="_blank"> <i class="fas fa-external-link-alt"></i></a></td>
                 </tr>`)
                 $('tbody').append(currentFestBeingAddedNow);
             }
